@@ -1,0 +1,27 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/cliente-juridico?retryWrites=true&w=majority
+
+
+openai-service:
+  api-key: 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
+  gpt-model: gpt-3.5-turbo
+  audio-model: whisper-1
+  http-client:
+    read-timeout: 18000
+    connect-timeout: 18000
+  urls:
+    base-url: https://api.openai.com/v1
+    chat-url: /chat/completions
+    create-transcription-url: /audio/transcriptions      
