@@ -13,7 +13,7 @@ spring:
       server:
          git:
           default-label: master
-          uri: https://github.com/NttData-Bootcamp-Microservicios-2/semana4-config-server
+          uri: git@github.com:Hackathon-ChatGPT-NTTDATA/configserver.git
           #uri: https://github.com/NTTData-Bootcamp-Microservicios/semana4-config-server
           search-paths: config-data
       
