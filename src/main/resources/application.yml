@@ -7,7 +7,7 @@ spring:
     image:
      location: classpath:fotocreador/microservicios.png
   application:
-    name: config-server
+    name: configserver
   cloud:
     config:
       server:
