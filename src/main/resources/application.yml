@@ -15,4 +15,8 @@ spring:
           default-label: master
           uri: git@github.com:Hackathon-ChatGPT-NTTDATA/configserver.git
         
-          search-paths: config-data          
+          search-paths: config-data   
+          
+
+
+                       

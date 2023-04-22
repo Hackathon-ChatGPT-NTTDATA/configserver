@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       routes[0]:
-        id: microservicio-activo-personal
+        id: alumno
         predicates: Path=/api/activo/personal/**
         filters: StripPrefix=3
         uri: lb://microservicio-activo-personal
@@ -32,5 +32,5 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
     instance:
-     hostname: localhost
+      hostname: localhost
   
