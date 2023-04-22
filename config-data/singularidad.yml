@@ -11,11 +11,11 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/cliente-juridico?retryWrites=true&w=majority
+      uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/alumno?retryWrites=true&w=majority
 
 
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
