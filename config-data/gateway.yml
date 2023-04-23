@@ -3,9 +3,9 @@ spring:
     gateway:
       routes[0]:
         id: alumno
-        predicates: Path=/api/activo/personal/**
+        predicates: Path=/api/activo/alumno/**
         filters: StripPrefix=3
-        uri: lb://microservicio-activo-personal
+        uri: lb://alumno
       
 
 
