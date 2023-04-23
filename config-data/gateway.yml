@@ -3,13 +3,10 @@ spring:
     gateway:
       routes[0]:
         id: alumno
-        predicates: Path=/api/activo/alumno/**
-        filters: StripPrefix=3
+        predicates: Path=/api/alumno/**
+        filters: StripPrefix=2
         uri: lb://alumno
-      
-
-
-
+ 
       discovery:
         locator:
           enabled: 'true'
@@ -18,19 +15,16 @@ spring:
         enabled: 'false'
   application:
     name: gateway
-  kafka:
-    bootstrap-servers: localhost:9092
-  redis:
-        url: redis://localhost:6379
 
 server:
-  port: 8090
+  port: '8090'
+
 eureka:
+  instance:
+    hostname: localhost
   client:
     fetch-registry: 'true'
     register-with-eureka: 'true'
     service-url:
       defaultZone: http://localhost:8761/eureka
-    instance:
-      hostname: localhost
   
