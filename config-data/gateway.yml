@@ -2,10 +2,10 @@ spring:
   cloud:
     gateway:
       routes[0]:
-        id: alumno
-        predicates: Path=/api/alumno/**
+        id: alumnowebflux
+        predicates: Path=/api/alumnowebflux/**
         filters: StripPrefix=2
-        uri: lb://alumno
+        uri: lb://alumnowebflux
  
       discovery:
         locator:
