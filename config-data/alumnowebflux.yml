@@ -50,3 +50,9 @@ resilience4j.timelimiter:
         backendB:
             timeoutDuration: 1s
             cancelRunningFuture: false
+            
+            
+            
+config:
+ balanceador:
+  test: pruebas de balanceo de carga desde el config server EUREKA y Spring Cloud Gate            
