@@ -11,7 +11,7 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://admin:cmtest@cluster0.gbjfds7.mongodb.net/?retryWrites=true&w=majority
+      uri: mongodb+srv://admin:cmtest@cluster0.gbjfds7.mongodb.net/hackathon-nttdata?retryWrites=true&w=majority
 
   kafka:
     bootstrap-servers: localhost:9092
