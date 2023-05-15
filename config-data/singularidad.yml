@@ -11,17 +11,17 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/alumno?retryWrites=true&w=majority
+      uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
 
 
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
-    read-timeout: 18000
-    connect-timeout: 18000
+    read-timeout: 16000
+    connect-timeout: 16000
   urls:
     base-url: https://api.openai.com/v1
     chat-url: /chat/completions
-    create-transcription-url: /audio/transcriptions      
+    create-transcription-url: /audio/transcriptions  
