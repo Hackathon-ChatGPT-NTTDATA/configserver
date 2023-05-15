@@ -6,7 +6,12 @@ spring:
         predicates: Path=/api/alumnowebflux/**
         filters: StripPrefix=2
         uri: lb://alumnowebflux
- 
+      routes[1]:
+        id: singularidad
+        predicates: Path=/api/singularidad/**
+        filters: StripPrefix=2
+        uri: lb://singularidad
+        
       discovery:
         locator:
           enabled: 'true'
