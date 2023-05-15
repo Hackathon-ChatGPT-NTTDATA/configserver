@@ -15,7 +15,7 @@ spring:
 
 
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
