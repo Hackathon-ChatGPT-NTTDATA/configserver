@@ -12,7 +12,7 @@ spring:
   data:
     mongodb:
    #  uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
-      uri: mongodb+srv://cmtest:cmtest@test.krhx1.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
+      uri: mongodb+srv://admin:admin@cluster0.gbjfds7.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
       
   kafka:
     bootstrap-servers: localhost:9092
