@@ -1,6 +1,16 @@
 spring:
   cloud:
     gateway:
+      globalcors:
+        corsConfiguration:
+          '[/**]':
+            allowedOrigins: 'http://localhost:4200'
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              
       routes[0]:
         id: alumnowebflux
         predicates: Path=/api/alumnowebflux/**
