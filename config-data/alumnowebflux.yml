@@ -15,7 +15,19 @@ spring:
       uri: mongodb+srv://chatgpt:chatgpt@cluster1.km8zme5.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majorit
       
   kafka:
-    bootstrap-servers: localhost:9092
+    topic: ${TOPIC:orders}
+    consumer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093}
+      group-id: ${CONSUMER_GROUP:coder_path}
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer  
+      
+       
   redis:
         url: redis://localhost:6379
 
