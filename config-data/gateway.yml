@@ -23,6 +23,12 @@ spring:
         predicates: Path=/api/singularidad/**
         filters: StripPrefix=2
         uri: lb://singularidad
+      routes[2]:
+        id: cursos
+        predicates: Path=/api/cursos/**
+        filters: StripPrefix=2
+        uri: lb://cursos
+
         
       discovery:
         locator:
