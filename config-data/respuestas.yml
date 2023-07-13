@@ -1,0 +1,71 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  data:
+    mongodb:
+  #   uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
+      uri: mongodb+srv://chatgpt:chatgpt@cluster1.km8zme5.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majorit
+
+  kafka:
+    consumer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093}
+      group-id: ${CONSUMER_GROUP:coder_path}
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      
+    producer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092,localhost:9093}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      
+       
+  redis:
+        url: redis://localhost:6379
+
+
+        
+
+resilience4j.circuitbreaker:
+    instances:
+        backendA:
+            registerHealthIndicator: true
+            slidingWindowSize: 10
+            permittedNumberOfCallsInHalfOpenState: 3
+            slidingWindowType: TIME_BASED
+            minimumNumberOfCalls: 20
+            waitDurationInOpenState: 2s
+            failureRateThreshold: 50
+            eventConsumerBufferSize: 10
+        backendB:
+            registerHealthIndicator: true
+            slidingWindowSize: 10
+            permittedNumberOfCallsInHalfOpenState: 3
+            slidingWindowType: TIME_BASED
+            minimumNumberOfCalls: 20
+            waitDurationInOpenState: 2s
+            failureRateThreshold: 50
+            eventConsumerBufferSize: 10
+
+resilience4j.timelimiter:
+    instances:
+        backendA:
+            timeoutDuration: 2s
+            cancelRunningFuture: true
+        backendB:
+            timeoutDuration: 1s
+            cancelRunningFuture: false
+            
+            
+            
+config:
+ balanceador:
+  test: pruebas de balanceo de carga desde el config server EUREKA y Spring Cloud Gate            
