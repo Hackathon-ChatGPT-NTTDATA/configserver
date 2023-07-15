@@ -68,4 +68,6 @@ resilience4j.timelimiter:
             
 config:
  balanceador:
-  test: pruebas de balanceo de carga desde el config server EUREKA y Spring Cloud Gate            
+  test: pruebas de balanceo de carga desde el config server EUREKA y Spring Cloud Gate   
+ base:
+  endpoint: http://localhost:8090/api/respuestas         
