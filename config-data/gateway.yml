@@ -29,6 +29,16 @@ spring:
         predicates: Path=/api/cursos/**
         filters: StripPrefix=2
         uri: lb://cursos
+      routes[3]:
+        id: examenes
+        predicates: Path=/api/examenes/**
+        filters: StripPrefix=2
+        uri: lb://examenes
+      routes[4]:
+        id: respuestas
+        predicates: Path=/api/respuestas/**
+        filters: StripPrefix=2
+        uri: lb://respuestas
 
         
       discovery:
