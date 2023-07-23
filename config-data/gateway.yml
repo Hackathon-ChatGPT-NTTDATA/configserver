@@ -35,6 +35,11 @@ spring:
         filters: StripPrefix=2
         uri: lb://examenes
       routes[4]:
+        id: preguntas
+        predicates: Path=/api/preguntas/**
+        filters: StripPrefix=2
+        uri: lb://preguntas
+      routes[5]:
         id: respuestas
         predicates: Path=/api/respuestas/**
         filters: StripPrefix=2

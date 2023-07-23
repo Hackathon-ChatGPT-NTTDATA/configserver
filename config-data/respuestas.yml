@@ -12,7 +12,7 @@ spring:
   data:
     mongodb:
   #   uri: mongodb+srv://joffre:joffre@bootcamp-microservicios.c9yhl.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majority
-      uri: mongodb+srv://chatgpt:chatgpt@cluster1.km8zme5.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true
+      uri: mongodb+srv://chatgpt:chatgpt@cluster1.km8zme5.mongodb.net/chatgpt-nttdata-hackahton?retryWrites=true&w=majorit
 
   kafka:
     consumer:
