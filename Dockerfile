@@ -1,5 +1,16 @@
+#
+# Build stage
+#
+FROM maven:3.6.0-jdk-11-slim AS build
+COPY src /home/app/src
+COPY pom.xml /home/app
+RUN mvn -f /home/app/pom.xml clean package
+
+#
+# Package stage
+#
 FROM adoptopenjdk/openjdk11:alpine-slim
 EXPOSE 7000
-ADD target/configserver-0.0.1-SNAPSHOT.jar app.jar
-ADD config-data config-data
-ENTRYPOINT ["java", "-jar","/app.jar"]
+COPY --from=build /home/app/target/configserver-0.0.1-SNAPSHOT.jar app/app.jar
+ADD config-data app/config-data
+ENTRYPOINT ["java", "-jar","/app/app.jar"]
