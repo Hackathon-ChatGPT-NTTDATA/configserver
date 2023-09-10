@@ -1,0 +1,23 @@
+server:
+  port: 7000
+
+spring:
+  banner:
+    location: classpath:banner/banner.txt
+    image:
+     location: classpath:fotocreador/microservicios.png
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+      
+        git:
+          default-label: master
+          uri: https://github.com/Hackathon-ChatGPT-NTTDATA/configserver.git
+          force-pull: true
+          search-paths: config-data   
+      enabled: true   
+
+
+                       

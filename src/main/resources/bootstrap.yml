@@ -11,8 +11,7 @@ spring:
   cloud:
     config:
       server:
-       
-        bootstrap: true
+      
         git:
           default-label: master
           uri: https://github.com/Hackathon-ChatGPT-NTTDATA/configserver.git
