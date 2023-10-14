@@ -9,7 +9,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Package stage
 #
-FROM adoptopenjdk/openjdk17:alpine-slim
+FROM openjdk:17-alpine
 EXPOSE 7000
 COPY --from=build /home/app/target/configserver-0.0.1-SNAPSHOT.jar app/app.jar
 ADD config-data app/config-data
