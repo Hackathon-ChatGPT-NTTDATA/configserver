@@ -5,7 +5,7 @@ spring:
   banner:
     location: classpath:banner/banner.txt
     image:
-     location: classpath:fotocreador/microservicios.png
+     location: classpath:fotocreador/foto.jpeg
   application:
     name: configserver
   cloud:

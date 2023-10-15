@@ -1,12 +1,4 @@
 
-
-                   ▄▄   ▄ ▄▄▄▄▄ ▄▄▄▄▄▄  ▄▄▄▄▄▄ ▄▄▄▄▄▄▐▄▄▄▄▄ ▄▄▄▄▄▄
-
-                  ▐▓▐▓ ▐▓   ▓     ▓▓    ▓░  ▐▓ ▄▄▄▄▄▓   ▓   ▄▄▄▄▓▓
-
-                  ▐▓ ▐▓▐▓   ▓     ▓▓    ▓▒  ▐▓░▓▌  ▐▓   ▓  ▐▓▒  ▐▓
-
-                   ▀   ▀▀   ▀     ▀▀    ▀▀▀▀▀   ▀▀▀▀▀   ▀    ▀▀▀▀▀
                    
  ,oc.            ..............                 ..       .. .';cccc:::;,,,'''..
   ;xo'            ..'....   ....                 ..       ....:x00kdolcc::;,,,'.
@@ -64,9 +56,9 @@ HACKATHON EQUIPO 51NGµL@R1Ð@Ð
 INTEGRANTES
 
 
-
-CARLO DELGADO MARALLANO (fullstack -DEVOPS)
-JOFFRE HERMOSILLA SALAS (fullstack -DEVOPS
+ALLISON JARA SALAS (UX -FRONTEND)
+CARLO DELGADO MARALLANO (fullstack)
+JOFFRE HERMOSILLA SALAS (DEVOPS)
 
 
 
