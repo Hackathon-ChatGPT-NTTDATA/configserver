@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acrconfigserver-localdocker-deployment
+  labels:
+    app: acrconfigserver-localdocker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acrconfigserver-localdocker
+  template:
+    metadata:
+      labels:
+        app: acrconfigserver-localdocker
+    spec:
+      containers:
+        - name: acracrconfigserverdemo-localdocker
+         # image: __DOCKER_REPOSITORY__/__IMAGE_NAME__:__IMAGE_TAG__
+          image: aksforacrcoderpath.azurecr.io/coderpath/aks-ms-configserver:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+          limits:
+            cpu: 300m
+            memory: "100Mi"
+          requests:
+            cpu: 100m
+            memory: "50Mi"
