@@ -35,7 +35,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "aksforacrcoderpath.azurecr.io"
+  AZURE_CONTAINER_REGISTRY: "aksforacrcoderpath"
   CONTAINER_NAME: "ms-config-server"
   RESOURCE_GROUP: "aks-coderpath"
   CLUSTER_NAME: "aks-singularidad2"
