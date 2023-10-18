@@ -4,8 +4,7 @@ server:
 spring:
   banner:
     location: classpath:banner/banner.txt
-    image:
-     location: classpath:fotocreador/foto.jpeg
+    
   application:
     name: configserver
   cloud:
@@ -14,7 +13,7 @@ spring:
       
         git:
           default-label: master
-          uri: https://github.com/Hackathon-ChatGPT-NTTDATA/configserver.git
+          uri: https://github.com/51NG-L-R1D-D/configserver.git
           force-pull: true
           search-paths: config-data   
       enabled: true   
