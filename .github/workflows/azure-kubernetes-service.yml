@@ -35,11 +35,11 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
+  AZURE_CONTAINER_REGISTRY: "aksforacrcoderpath"
   CONTAINER_NAME: "ms-config-server"
   RESOURCE_GROUP: "aks-coderpath"
-  CLUSTER_NAME: "aks-singularidad"
-  DEPLOYMENT_MANIFEST_PATH: "kubernetes/acr-deployment-aks.yml"
+  CLUSTER_NAME: "aks-singularidad2"
+  DEPLOYMENT_MANIFEST_PATH: "kubernetes/azure-configserver.yaml"
 
 jobs:
   buildImage:
