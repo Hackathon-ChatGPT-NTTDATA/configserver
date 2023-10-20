@@ -20,7 +20,7 @@ spec:
           image: aksforacrcoderpath.azurecr.io/coderpath/aks-ms-configserver:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 7000
           resources:
           limits:
             cpu: 300m
