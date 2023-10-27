@@ -15,10 +15,10 @@ spring:
               - DELETE
               
       routes[0]:
-        id: alumnowebflux
-        predicates: Path=/api/alumnowebflux/**
+        id: alumno
+        predicates: Path=/api/alumno/**
         filters: StripPrefix=2
-        uri: lb://alumnowebflux
+        uri: lb://alumno
       routes[1]:
         id: singularidad
         predicates: Path=/api/singularidad/**
