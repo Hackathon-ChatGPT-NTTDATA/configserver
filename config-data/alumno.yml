@@ -27,8 +27,8 @@ spring:
    key-serializer: org.apache.kafka.common.serialization.StringSerializer
    value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
- main:
-  allow-bean-definition-overriding: true
+# main:
+ # allow-bean-definition-overriding: true
       
        
  data.redis.url: redis://localhost:6379
