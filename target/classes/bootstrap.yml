@@ -13,7 +13,7 @@ spring:
       
         git:
           default-label: master
-          uri: https://github.com/Hackathon-ChatGPT-NTTDATA/configserver
+          uri: https://github.com/HACKATHON-DATA-ANALYTICS-2024-NTTDATA/configserver
           force-pull: true
           search-paths: config-data   
       enabled: true   
